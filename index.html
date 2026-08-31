@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karan Khokhar | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +16,6 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">Karan Khokhar</div>
-    <button class="menu-toggle">☰</button>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#education">Education</a></li>
@@ -19,23 +23,31 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <h1>Hi, I'm Karan Khokhar</h1>
-    <p>AI/ML Enthusiast | B.Tech Student</p>
-    <a href="#contact" class="btn">Get In Touch</a>
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="highlight">Karan Khokhar</span></h1>
+        <p>AI/ML Enthusiast | B.Tech Student</p>
+        <a href="#contact" class="btn">Get In Touch</a>
+      </div>
+      <div class="hero-image">
+        <img src="portfolio.jpg" alt="Karan Khokhar" onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=Karan Khokhar'">
+      </div>
+    </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-      I'm an 18-year-old B.Tech student majoring in Artificial Intelligence and 
-      Machine Learning at CT Group of Institutions, Shahpur Campus. I'm passionate 
-      about exploring how AI/ML can solve real-world problems, and I'm currently 
-      building my skills as a fresher starting August 2026.
+      I'm a B.Tech student majoring in Artificial Intelligence and
+      Machine Learning at CT Group of Institutions, Shahpur Campus. I'm passionate
+      about exploring how AI/ML can solve real-world problems, and I'm currently
+      building my skills as a fresher as of 2026.
     </p>
   </section>
 
@@ -52,12 +64,24 @@
   <!-- Skills Section -->
   <section id="skills" class="section">
     <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Python</li>
-      <li>HTML & CSS</li>
-      <li>Git & GitHub</li>
-      <li>Machine Learning (Learning)</li>
-    </ul>
+    <div class="skills-bars">
+      <div class="skill">
+        <div class="skill-label"><span>Python</span><span>75%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-label"><span>HTML & CSS</span><span>80%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-label"><span>Git & GitHub</span><span>60%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="60%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-label"><span>Machine Learning</span><span>40%</span></div>
+        <div class="skill-bar"><div class="skill-fill" data-width="40%"></div></div>
+      </div>
+    </div>
   </section>
 
   <!-- Projects Section -->
@@ -65,8 +89,14 @@
     <h2>Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <h3>Project Coming Soon</h3>
-        <p>I'm currently working on my first project — check back soon!</p>
+        <div class="project-info">
+          <h3>Project Coming Soon</h3>
+          <p>I'm currently working on my first project — check back soon!</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">ML</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -74,9 +104,9 @@
   <!-- Contact Section -->
   <section id="contact" class="section">
     <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:karankhokhar2021@gmail.com">karankhokhar2021@gmail.com</a></p>
+    <p><a href="mailto:karankhokhar2021@gmail.com">Mail Me :) </a></p>
     <p>
-      <a href="https://linkedin.com/in/karan-khokhar" target="_blank">LinkedIn</a> |
+      <a href="https://linkedin.com/in/kaaran-khokhar" target="_blank">LinkedIn</a> |
       <a href="https://github.com/kran-arch" target="_blank">GitHub</a>
     </p>
   </section>

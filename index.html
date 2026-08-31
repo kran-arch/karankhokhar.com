@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karan Khokhar | Portfolio</title>
+  <title>Karan Khokhar — Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
+  <div class="ruler" aria-hidden="true"></div>
+
   <nav class="navbar">
     <div class="logo">Karan Khokhar</div>
     <ul class="nav-links">
@@ -23,96 +24,130 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
+  <header class="hero" id="hero">
+    <div class="blueprint-grid" aria-hidden="true"></div>
+
+    <div class="hero-inner">
       <div class="hero-text">
-        <h1>Hi, I'm <span class="highlight">Karan Khokhar</span></h1>
-        <p>AI/ML Enthusiast | B.Tech Student</p>
-        <a href="#contact" class="btn">Get In Touch</a>
+        <p class="sheet-label">SHEET A-01 — INDEX</p>
+        <h1>Karan Khokhar</h1>
+        <div class="draft-line"></div>
+        <p class="hero-role">B.Tech · Artificial Intelligence &amp; Machine Learning</p>
+        <p class="hero-note">Currently drafting the fundamentals — one module, one project at a time.</p>
+        <a href="#contact" class="btn">Get in touch</a>
       </div>
-      <div class="hero-image">
-        <img src="portfolio.jpg" alt="Karan Khokhar" onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=Karan Khokhar'">
+
+      <div class="hero-photo-frame">
+        <img src="profile.jpg" alt="Karan Khokhar" onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=Karan Khokhar&backgroundColor=16283f'">
+        <span class="corner tl"></span>
+        <span class="corner tr"></span>
+        <span class="corner bl"></span>
+        <span class="corner br"></span>
       </div>
     </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I'm a B.Tech student majoring in Artificial Intelligence and
-      Machine Learning at CT Group of Institutions, Shahpur Campus. I'm passionate
-      about exploring how AI/ML can solve real-world problems, and I'm currently
-      building my skills as a fresher as of 2026.
-    </p>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="section">
-    <h2>Education</h2>
-    <div class="edu-item">
-      <h3>Bachelor of Technology — AI & ML</h3>
-      <p>CT Group of Institutions, Shahpur Campus</p>
-      <p>Started August 2026</p>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills-bars">
-      <div class="skill">
-        <div class="skill-label"><span>Python</span><span>75%</span></div>
-        <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+    <div class="title-block">
+      <div>
+        <span class="tb-label">Name</span>
+        <span class="tb-value">Karan Khokhar</span>
       </div>
-      <div class="skill">
-        <div class="skill-label"><span>HTML & CSS</span><span>80%</span></div>
-        <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+      <div>
+        <span class="tb-label">Discipline</span>
+        <span class="tb-value">AI / ML</span>
       </div>
-      <div class="skill">
-        <div class="skill-label"><span>Git & GitHub</span><span>60%</span></div>
-        <div class="skill-bar"><div class="skill-fill" data-width="60%"></div></div>
+      <div>
+        <span class="tb-label">Status</span>
+        <span class="tb-value">Fresher · Aug 2026</span>
       </div>
-      <div class="skill">
-        <div class="skill-label"><span>Machine Learning</span><span>40%</span></div>
-        <div class="skill-bar"><div class="skill-fill" data-width="40%"></div></div>
+      <div>
+        <span class="tb-label">Location</span>
+        <span class="tb-value">Jalandhar, Punjab</span>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-info">
-          <h3>Project Coming Soon</h3>
-          <p>I'm currently working on my first project — check back soon!</p>
+  <main>
+    <section id="about" class="sheet">
+      <p class="sheet-label">SHEET A-02 — ABOUT</p>
+      <h2>About</h2>
+      <p>
+        I'm an 18-year-old B.Tech student majoring in Artificial Intelligence and
+        Machine Learning at CT Group of Institutions, Shahpur Campus. I'm interested
+        in how AI/ML moves from theory into things that actually work — and I'm early
+        in that process, building the fundamentals as a fresher starting August 2026.
+      </p>
+    </section>
+
+    <section id="education" class="sheet">
+      <p class="sheet-label">SHEET A-03 — EDUCATION</p>
+      <h2>Education</h2>
+      <div class="edu-item">
+        <h3>Bachelor of Technology — AI &amp; ML</h3>
+        <p>CT Group of Institutions, Shahpur Campus</p>
+        <p class="edu-date">Started August 2026</p>
+      </div>
+    </section>
+
+    <section id="skills" class="sheet">
+      <p class="sheet-label">SHEET A-04 — SKILLS</p>
+      <h2>Skills</h2>
+      <div class="gauge-list">
+        <div class="gauge">
+          <div class="gauge-top"><span>Python</span><span>75%</span></div>
+          <div class="gauge-track"><div class="gauge-fill" data-width="75%"></div></div>
+        </div>
+        <div class="gauge">
+          <div class="gauge-top"><span>HTML &amp; CSS</span><span>80%</span></div>
+          <div class="gauge-track"><div class="gauge-fill" data-width="80%"></div></div>
+        </div>
+        <div class="gauge">
+          <div class="gauge-top"><span>Git &amp; GitHub</span><span>60%</span></div>
+          <div class="gauge-track"><div class="gauge-fill" data-width="60%"></div></div>
+        </div>
+        <div class="gauge">
+          <div class="gauge-top"><span>Machine Learning</span><span>40%</span></div>
+          <div class="gauge-track"><div class="gauge-fill" data-width="40%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="sheet">
+      <p class="sheet-label">SHEET A-05 — PROJECTS</p>
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-plate">
+          <span class="corner tl"></span>
+          <span class="corner tr"></span>
+          <span class="corner bl"></span>
+          <span class="corner br"></span>
+          <span class="plate-number">P-01</span>
+          <h3>Project coming soon</h3>
+          <p>I'm currently working on my first build — check back soon.</p>
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">ML</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p><a href="mailto:karankhokhar2021@gmail.com">Mail Me :) </a></p>
-    <p>
-      <a href="https://linkedin.com/in/kaaran-khokhar" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/kran-arch" target="_blank">GitHub</a>
-    </p>
-  </section>
+    <section id="contact" class="sheet">
+      <p class="sheet-label">SHEET A-06 — CONTACT</p>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        &nbsp;·&nbsp;
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      </p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2026 Karan Khokhar. All rights reserved.</p>
+    <p>&copy; 2026 Karan Khokhar — drafted by hand.</p>
+    <button class="mode-toggle">Switch to print mode</button>
   </footer>
 
   <script src="script.js"></script>

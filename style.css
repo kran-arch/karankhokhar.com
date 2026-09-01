@@ -414,3 +414,8 @@ footer {
 .skip-link:focus {
   top: 0;
 }
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

@@ -13,20 +13,20 @@
 </head>
 <body>
 
+  <div class="ruler" aria-hidden="true"></div>
 
-<div class="ruler" aria-hidden="true"></div>
+  <nav class="navbar" aria-label="Primary">
+    <a href="index.html" class="logo">Karan Khokhar</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<nav class="navbar" aria-label="Primary">
-  <a href="index.html" class="logo">Karan Khokhar</a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
   <header class="hero" id="hero">
     <div class="blueprint-grid" aria-hidden="true"></div>
 
@@ -40,11 +40,11 @@
       </div>
 
       <div class="hero-photo-frame">
-        <img src="assets/profile.jpg" alt="Karan Khokhar" onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=Karan Khokhar&backgroundColor=16283f'">
-        <span class="corner tl"></span>
-        <span class="corner tr"></span>
-        <span class="corner bl"></span>
-        <span class="corner br"></span>
+        <img src="assets/profile.jpg" alt="Karan Khokhar" onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=Karan Khokhar&amp;backgroundColor=16283f'">
+        <span class="corner tl" aria-hidden="true"></span>
+        <span class="corner tr" aria-hidden="true"></span>
+        <span class="corner bl" aria-hidden="true"></span>
+        <span class="corner br" aria-hidden="true"></span>
       </div>
     </div>
 
@@ -70,7 +70,9 @@
 
   <main>
     <section id="about" class="sheet">
-      <h2>/About</h2>
+      <h2 class="section-heading">
+        <span class="prefix" aria-hidden="true">/</span>About
+      </h2>
       <p>
         I'm a B.Tech student majoring in Artificial Intelligence and
         Machine Learning at CT Group of Institutions, Shahpur Campus. I'm interested
@@ -80,95 +82,110 @@
     </section>
 
     <section id="education" class="sheet">
-      <h2>/Education</h2>
-      <div class="edu-item">
+      <h2 class="section-heading">
+        <span class="prefix" aria-hidden="true">/</span>Education
+      </h2>
+      <article class="edu-item">
         <h3>Bachelor of Technology — AI &amp; ML</h3>
         <p>CT Group of Institutions, Shahpur Campus</p>
         <p class="edu-date">August 2026 — Present</p>
-      </div>
+      </article>
 
-      <div class="edu-item">
-        <h4>High School Diploma — PCM &amp; IT</h4>
-        <p>The Gurkul School, Malko</p>
-        <p class="edu-date">april 2024 — May 2026</p>
-      </div>
+      <article class="edu-item">
+        <h3>High School Diploma — PCM &amp; IT</h3>
+        <p>The Gurukul School, Malko</p>
+        <p class="edu-date">April 2024 — May 2026</p>
+      </article>
     </section>
 
     <section id="experience" class="sheet">
-      <h2>/Experience</h2>
-      <div class="edu-item">
+      <h2 class="section-heading">
+        <span class="prefix" aria-hidden="true">/</span>Experience
+      </h2>
+      <article class="edu-item">
         <h3>Fresher — Self-Directed Learning</h3>
-       <p>Building foundational skills in Python and web development through personal projects.</p>
-      <p class="edu-date">August 2026 — Present</p>
-    </div>
+        <p>Building foundational skills in Python, algorithms, and web technologies through personal projects.</p>
+        <p class="edu-date">August 2026 — Present</p>
+      </article>
     </section>
 
     <section id="skills" class="sheet">
-      <h2>/Skills</h2>
-      <div class="gauge-list">
-        <div class="gauge">
-          <div class="gauge-top"><span>Python</span><span></span></div>
-          <div class="gauge-track"><div class="gauge-fill" data-width="75%"></div></div>
-        </div>
-        <div class="gauge">
-          <div class="gauge-top"><span>Machine Learning</span><span></span></div>
-          <div class="gauge-track"><div class="gauge-fill" data-width="40%"></div></div>
-        </div>
+      <h2 class="section-heading">
+        <span class="prefix" aria-hidden="true">/</span>Skills
+      </h2>
+      <div class="skills-group">
+        <h3 class="skills-category">Languages &amp; Core Tools</h3>
+        <ul class="badge-list">
+          <li class="badge">Python</li>
+          <li class="badge">HTML5</li>
+          <li class="badge">CSS3</li>
+          <li class="badge">JavaScript</li>
+          <li class="badge">Git / GitHub</li>
+        </ul>
       </div>
     </section>
 
     <section id="projects" class="sheet">
-  <h2>/Projects</h2>
+      <h2 class="section-heading">
+        <span class="prefix" aria-hidden="true">/</span>Projects
+      </h2>
 
-  <div class="project-grid">
+      <div class="projects-grid">
+        <article class="project-card">
+          <a href="web-pages/project1.html" class="project-link">
+            <div class="project-header">
+              <span class="project-id">P-01</span>
+              <span class="external-icon" aria-hidden="true">↗</span>
+            </div>
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-description">
+              Hand-crafted responsive developer portfolio engineered with semantic HTML5, custom CSS layout systems, and vanilla JavaScript.
+            </p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+          </a>
+        </article>
 
-    <a href="web-pages/project1.html" class="project-plate">
-      <span class="corner tl"></span>
-      <span class="corner tr"></span>
-      <span class="corner bl"></span>
-      <span class="corner br"></span>
-      <span class="plate-number">P-01</span>
-      <h3>Project- Portfolio Website</h3>
-      <p>I'm working on my website to make it visually good and
-        learn html/css/js as my side projects.</p>
-      <div class="tags">
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">Java Script</span>
+        <article class="project-card">
+          <a href="web-pages/project2.html" target="_blank" rel="noopener noreferrer" class="project-link">
+            <div class="project-header">
+              <span class="project-id">P-02</span>
+              <span class="external-icon" aria-hidden="true">↗</span>
+            </div>
+            <h3 class="project-title">Python ML &amp; Algorithm Foundations</h3>
+            <p class="project-description">
+              Core implementation of foundational Python algorithms and data structures focusing on computational efficiency and machine learning basics.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>AI / ML</span>
+            </div>
+          </a>
+        </article>
       </div>
-    </a>
-
-    <a href="web-pages/project2.html" class="project-plate">
-      <span class="corner tl"></span>
-      <span class="corner tr"></span>
-      <span class="corner bl"></span>
-      <span class="corner br"></span>
-      <span class="plate-number">P-02</span>
-      <h3>Project coming soon</h3>
-      <p>I'm currently working on my first build — check back soon</p>
-      <div class="tags">
-        <span class="tag">AI</span>
-        <span class="tag">ML</span>
-      </div>
-    </a>
-
-  </div>
-</section>
+    </section>
 
     <section id="contact" class="sheet">
-      <h2>/Contact</h2>
-      <p><a href="mailto:karankhokhar2021@gmail.com">MAIL ME</a></p>
-      <p>
-        <a href="https://linkedin.com/in/karan-khokhar" target="_blank">LinkedIn</a>
-        &nbsp;·&nbsp;
-        <a href="https://github.com/kran-arch" target="_blank">GitHub</a>
+      <h2 class="section-heading">
+        <span class="prefix" aria-hidden="true">/</span>Contact
+      </h2>
+      <p class="contact-lead">
+        <a href="mailto:karankhokhar2021@gmail.com" class="btn mail-btn">&#128233;</a>
       </p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/karan-khokhar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/kran-arch" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Karan Khokhar — drafted by hand.</p>
-    <p> All rights reserved.</p>
+    <p>All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>

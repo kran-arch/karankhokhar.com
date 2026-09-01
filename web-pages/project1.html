@@ -3,27 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Website — Karan Khokhar</title>
+  <title>Project — Portfolio Website | Karan Khokhar</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
   <div class="ruler" aria-hidden="true"></div>
 
-  <nav class="navbar">
-    <div class="logo">Karan Khokhar</div>
+  <nav class="navbar" aria-label="Primary">
+    <a href="../index.html" class="logo">Karan Khokhar</a>
     <ul class="nav-links">
-      <li><a href="../index.html">← Back to Portfolio</a></li>
+      <li><a href="../index.html">&larr; Back to Portfolio</a></li>
     </ul>
   </nav>
 
   <main>
-    <section class="sheet">
-      <h2>Portfolio Website</h2>
-      <p>
+    <article class="sheet">
+      <h1 class="section-heading">
+        <span class="prefix" aria-hidden="true">/</span>Project — Portfolio Website
+      </h1>
+
+      <p class="project-description">
         Built entirely by hand using HTML, CSS, and JavaScript—without
         templates or page builders—this portfolio was crafted to master
         core front-end fundamentals. Focusing on clean semantic structure,
@@ -32,44 +37,43 @@
         as an interactive resume.
       </p>
 
-      <div class="tags detail-tags">
-  <span class="tag">HTML</span>
-  <span class="tag">CSS</span>
-  <span class="tag">JavaScript</span>
-    </div>
+      <div class="project-tech detail-tags">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+      </div>
 
-      <h3 class="detail-heading">What it does</h3>
-      <p>
-        A multi-paged site with sections for About, Education, Skills, and
-        Projects, plus a blueprint-inspired design with a title block, and
-        animated skill gauges.
-      </p>
+      <section>
+        <h2 class="detail-heading">Overview &amp; Features</h2>
+        <p>
+          A multi-page site with sections for About, Education, Experience, Skills, and
+          Projects. Built with a blueprint-inspired design, custom title blocks, and lightweight CSS micro-interactions.
+        </p>
+      </section>
 
+      <section>
+        <h2 class="detail-heading">Design Inspiration</h2>
+        <p>
+          The design and core inspiration for this portfolio draw heavily from
+          engineer and creative technologist <a href="https://www.gazijarin.com" target="_blank" rel="noopener noreferrer" class="credit-link">Gazi Jarin</a>.
+          Known for her developer content, Gazi is a Software Engineer at Google who builds projects across machine learning, hardware, and game development.
+        </p>
+        <p>
+          Her portfolio stands out in the developer community for its sleek,
+          dark-mode visual identity, clean typography, minimalist layout, and
+          thoughtful presentation of personal projects and technical milestones. Modeling my portfolio after her work provided both a high
+          standard for aesthetic design and a blueprint for showcasing technical
+          expertise alongside personal identity.
+        </p>
+      </section>
 
-      <h4 class="detail-heading">Inspiration</h4>
-      <p>
-      The design and core inspiration for this portfolio draw heavily from
-      internet personality and engineer <a href="https://www.gazijarin.com"
-      target="_blank" class="credit-link">Gazi jarin</a>.Known for her popular developer content,
-      Gazi is a New York-based Software Engineer at Google and a creative
-      technologist who builds projects across machine learning, hardware,
-      and game development.
-      </p>
-
-
-      <p>Her portfolio stands out in the developer community for its sleek,
-      dark-mode visual identity, clean typography, minimalist layout, and
-      thoughtful presentation of personal projects, art, and professional
-      milestones. Modeling my portfolio after her work provided both a high
-      standard for aesthetic design and a blueprint for showcasing technical
-      expertise alongside personal identity.
-      </p>
-
-      <h5 class="detail-heading">Links</h5>
-      <p>
-        <a href="https://github.com/kran-arch/karankhokhar.com" target="_blank">View source on GitHub</a>
-      </p>
-    </section>
+      <section>
+        <h2 class="detail-heading">Source &amp; Repository</h2>
+        <p class="social-links">
+          <a href="https://github.com/kran-arch/karankhokhar.com" target="_blank" rel="noopener noreferrer">View source on GitHub &rarr;</a>
+        </p>
+      </section>
+    </article>
   </main>
 
   <footer>

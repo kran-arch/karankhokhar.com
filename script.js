@@ -40,27 +40,3 @@ if (gauges.length) {
 
   gauges.forEach(gauge => gaugeObserver.observe(gauge));
 }
-
-// ---------- Blueprint / Print mode toggle ----------
-const modeToggle = document.querySelector('.mode-toggle');
-const body = document.body;
-
-if (modeToggle) {
-  function applyMode(mode) {
-    if (mode === 'print') {
-      body.classList.add('print-mode');
-      modeToggle.textContent = 'Switch to blueprint mode';
-    } else {
-      body.classList.remove('print-mode');
-      modeToggle.textContent = 'Switch to print mode';
-    }
-  }
-
-  applyMode(localStorage.getItem('mode') || 'blueprint');
-
-  modeToggle.addEventListener('click', () => {
-    const next = body.classList.contains('print-mode') ? 'blueprint' : 'print';
-    applyMode(next);
-    localStorage.setItem('mode', next);
-  });
-}
